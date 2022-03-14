@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  background-color: #ebfbff;
+  background-color: ${({ theme }) => theme.colors.header};
   padding: 40 0;
 
-  h1 {
+  &:hover {
     color: red;
   }
 `;
